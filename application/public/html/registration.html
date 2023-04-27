@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/style.css">
+        <script defer src="../js/validation.js"></script>
+        <title>Registration</title>
+    </head>
+        <body>
+            <div class = "container">
+                <header class = "page-header">
+                    <h1>Registration</h1>
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Index</a></li>
+                            <li><a href="login.html">Login</a></li>
+                            <li><a href="registration.html">Registration</a></li>
+                            <li><a href="postvideo.html">Post Video</a></li>
+                            <li><a href="viewpost.html">View Post</a></li>
+                            <li><a href="profile.html">Profile</a></li>
+                        </ul>
+                    </nav>
+                </header>
+
+                <main class = "main-content">
+                    <h2 class = "form-header">Registration Form</h2>
+                    <form id = "registration-form" class = "form-container">
+                    <div class = "flex-content">
+                        <label for="username">Username</label>
+                        <input type="text" name="username" id="username" placeholder="Username">
+                        <p type="text" id="username-error" style="color: red; font-size: 12px; display: none;"></p>
+                        
+                        <label for="email">Email</label>
+                        <input type="text" name="email" id="email" placeholder="Email">
+                        <p type="text" id="email-error" style="color: red; font-size: 12px; display: none;"></p>
+
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" placeholder="Password">
+                        <p type="text" id="password-error" style="color: red; font-size: 12px; display: none;"></p>
+
+                        <label for="conpassword">Confirm Password</label>
+                        <input type="password" name="conpassword" id="conpassword" placeholder="Confirm Password">
+                        <p type="text" id="conpassword-error" style="color: red; font-size: 12px; display: none;"></p>
+
+                        <input type="checkbox" id="over13" name="over13">
+                        <label for="over13">I am 13 or older</label>
+                        <p type="text" id="age-error" style="color: red; font-size: 12px; display: none;"></p>
+
+
+                        <input type="checkbox" id="tos" name="tos">
+                        <label for="tos">I have read and agree to the <a href="">TOS and Privacy Rules</a></label>
+                        <p type="text" id="tos-error" style="color: red; font-size: 12px; display: none;"></p>
+
+
+                        <input type="submit" value="Register">
+                    </div>
+                    </form>
+                </main>
+
+                <footer class = "page-footer">Elliott Bullard &copy; 2023</footer>
+            </div>
+        </body>
+</html>
